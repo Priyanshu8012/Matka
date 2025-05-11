@@ -2,7 +2,7 @@ import React from 'react';
 
 const MatkaBookingPage = () => {
     return (
-        <div className="min-h-screen bg-orange-200 ">
+        <div className=" bg-orange-200 ">
             {/* Header Section */}
             <div className="bg-red-700 text-white text-center py-3 rounded-xl shadow-md">
                 अब सभी मटका बाजार खेलो ऑनलाइन एप पर रोज खेलो रोज कमाओ अभी डाउनलोड करो

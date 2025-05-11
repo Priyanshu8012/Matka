@@ -4,6 +4,8 @@ import LiveResults from './Liveresult';
 import LiveResult from './LiveResult2';
 import MatkaBookingPage from './Matkabooking';
 import Fast from './Fast';
+import Dpbosesresult from './Dpbossresult';
+import GameZone from './GameZone';
 
 const DpBossClone = () => {
   return (
@@ -87,6 +89,8 @@ const DpBossClone = () => {
       <LiveResult />
       <MatkaBookingPage />
       <Fast />
+      <Dpbosesresult />
+      <GameZone />
     </div>
   );
 };
