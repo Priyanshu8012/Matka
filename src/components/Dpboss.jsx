@@ -6,6 +6,7 @@ import MatkaBookingPage from './Matkabooking';
 import Fast from './Fast';
 import Dpbosesresult from './Dpbossresult';
 import GameZone from './GameZone';
+import FinalAnk from './Dynamic/FinalAnk'; // ✅ NEW IMPORT
 
 const DpBossClone = () => {
   return (
@@ -53,38 +54,11 @@ const DpBossClone = () => {
           <p className="text-black text-xl">4 - 9 - 1 - 6</p>
         </div>
 
-        {/* Final Ank with centered scrolling text */}
-        <div className="bg-gradient-to-bl from-yellow-200 to-orange-200 p-4 rounded-2xl text-center shadow relative h-28 overflow-hidden">
-          <h2 className="text-blue-800 font-bold text-lg mb-2">🔥 Final Ank</h2>
-          <div className="overflow-hidden h-16 relative flex justify-center items-center">
-            <div className="absolute animate-scrollUp text-black text-base font-medium text-center space-y-2">
-              <p>OLD MAIN MUMBAI - 4</p>
-              <p>MADHUR DAY - 4</p>
-              <p>MADHUR NIGHT - 4</p>
-            </div>
-          </div>
-        </div>
+        {/* Final Ank as component */}
+        <FinalAnk />
       </div>
 
-      {/* Scroll Animation */}
-      <style>
-        {`
-          @keyframes scrollUp {
-            0% {
-              transform: translateY(100%);
-            }
-            100% {
-              transform: translateY(-100%);
-            }
-          }
-
-          .animate-scrollUp {
-            animation: scrollUp 6s linear infinite;
-          }
-        `}
-      </style>
-
-      {/* Components */}
+      {/* Other Components */}
       <LiveResults />
       <LiveResult />
       <MatkaBookingPage />
