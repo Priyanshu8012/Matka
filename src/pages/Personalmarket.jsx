@@ -13,11 +13,26 @@ export default function PersonalMarket() {
   const API_URL = import.meta.env.VITE_API_URL || "";
 
   const allowedMarkets = [
-    "Shubh Morning",
-    "Shubh Day Open",
+      "Shubh Morning",
+    "Shubh Day Open", 
     "Shubh Night",
     "SUNDAY  DAY",
-    "SUNDAY NIGHT"
+    "SUNDAY NIGHT",
+    "MUMBAI DAY",
+    "MUMBAI NIGHT",
+    "KALYAN DAY",
+    "KALYAN NIGHT", 
+    "RAJDHANI DAY",
+    "RAJDHANI NIGHT",
+    "MILAN DAY",
+    "MILAN NIGHT",
+    "SRIDEVI DAY",
+    "SRIDEVI NIGHT",
+    "TIME BAZAR DAY",
+    "TIME BAZAR NIGHT",
+    "MAIN BAZAR DAY", 
+    "MAIN BAZAR NIGHT"
+
   ];
 
   useEffect(() => {

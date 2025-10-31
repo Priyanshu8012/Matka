@@ -10,6 +10,7 @@ const ChangePassword = () => {
   });
 
   const [loading, setLoading] = useState(false);
+  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -37,7 +38,7 @@ const ChangePassword = () => {
         newPassword: formData.newPassword,
       };
 
-      const response = await fetch("http://localhost:5000/api/change-password", {
+      const response = await fetch(`${API_URL}/api/change-password`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
